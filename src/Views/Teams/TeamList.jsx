@@ -12,31 +12,29 @@ export default function TeamList() {
 
         setTimeout(() => {
             setLoading(false)
-        }, 500)
+        }, 600)
     }, []);
 
-    if (loading) return <h1 style={{height: '100vh', fontSize: '4em'}}>...Loading teams</h1>;
+    if (loading) return <h1 style={{height: '100vh', fontSize: '3em'}}>...Loading teams</h1>;
         // <img src={ball} style={{backgroundColor: 'white'}}></img>
 
-  return (
-    <>
-    <section className='Teams'>
-        <div className='teamsList'>
-        <h1 style={{fontFamily: 'Century Gothic', fontSize: '3em'}}>~ Teams ~</h1>
+    return (
+        <section className='Teams'>
+            <div className='teamsList'>
+            <h1 style={{fontFamily: 'Century Gothic', fontSize: '4em', margin: '100px 0 0 0'}}>~ Teams ~</h1>
 
-        <ul aria-label='teams' style={{listStyleType: 'none', height: '100vh', margin: '100px 0 0 0'}}>
-            {teams.map((team) => {
-                return (
-                    <li key={team.id} style={{padding: '10px 0 10px 0'}}>
-                        <Link to={`/teams/${team.id}`}>
-                            {team.name}
-                        </Link>
-                    </li>
-                );
-            })}
-        </ul>
-        </div>
-    </section>
-    </>
-  );
+                <ul aria-label='teams' style={{listStyleType: 'none', height: '100vh', margin: '50px 0 0 0'}}>
+                    {teams.map((team) => {
+                        return (
+                            <li key={team.id} style={{padding: '10px 0 10px 0'}}>
+                                <Link to={`/teams/${team.id}`}>
+                                    {team.name}
+                                </Link>
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
+        </section>
+    );
 }
