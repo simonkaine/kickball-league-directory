@@ -14,7 +14,7 @@ export default function TeamDetails({ match }) {
         }, 600)
     }, [teamId]);
 
-    if (loading) return <h1 style={{height: '100vh', fontSize: '3em'}}>...Loading team</h1>;
+    if (loading) return <h1 style={{height: '100vh', fontSize: '3em', marginTop: '350px'}}>...Loading team</h1>;
 
     return (
         <div className='TeamDetails' style={{border: '1px solid black', padding: '100px 0 0 0'}}>
@@ -34,7 +34,7 @@ export default function TeamDetails({ match }) {
                             Name: {player.name}
                         </li>
                     );
-                })};
+                })}
             </ul>
         </div>
     );

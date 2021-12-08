@@ -14,7 +14,7 @@ export default function PlayersList() {
         }, 600)
     }, []);
 
-    if(loading) return <h1 style={{height: '100vh', fontSize: '3em'}}>...Loading players</h1>;
+    if(loading) return <h1 style={{height: '100vh', fontSize: '3em', marginTop: '350px'}}>...Loading players</h1>;
 
     return (
         <section className='Players'>
@@ -24,7 +24,7 @@ export default function PlayersList() {
                 <ul aria-label='players' style={{listStyleType: 'none', height: '100vh', margin: '50px 0 0 0'}}>
                     {players.map((player) => {
                         return (
-                            <li key={player.id} style={{padding: '10px 0 10px 0'}}>
+                            <li key={player.id} style={{padding: '10px 0 10px 0', fontSize: '1.5em'}}>
                                 <Link to={`/players/${player.id}`}>
                                     {player.name}
                                 </Link>

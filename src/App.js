@@ -6,6 +6,7 @@ import { Footer } from './Views/Footer/Footer';
 import TeamList from './Views/Teams/TeamList';
 import TeamDetails from './Views/Teams/TeamDetails';
 import PlayersList from './Views/Players/PlayersList';
+import PlayerDetails from './Views/Players/PlayersDetails';
 
 function App() {
   return (
@@ -22,10 +23,11 @@ function App() {
             <Home />  
           </Route>
 
+          <Route exact path='/teams' component={TeamList} />
           <Route path='/teams/:teamId' component={TeamDetails} />
-          <Route path='/teams' component={TeamList} />
-
-          <Route path='/players' component={PlayersList} />
+          
+          <Route exact path='/players' component={PlayersList} />
+          <Route path='/players/:playerId' component={PlayerDetails} />
 
       </Switch>
 

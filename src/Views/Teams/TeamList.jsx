@@ -15,7 +15,7 @@ export default function TeamList() {
         }, 600)
     }, []);
 
-    if (loading) return <h1 style={{height: '100vh', fontSize: '3em'}}>...Loading teams</h1>;
+    if (loading) return <h1 style={{height: '100vh', fontSize: '3em', marginTop: '350px'}}>...Loading teams</h1>;
         // <img src={ball} style={{backgroundColor: 'white'}}></img>
 
     return (
@@ -26,7 +26,7 @@ export default function TeamList() {
                 <ul aria-label='teams' style={{listStyleType: 'none', height: '100vh', margin: '50px 0 0 0'}}>
                     {teams.map((team) => {
                         return (
-                            <li key={team.id} style={{padding: '10px 0 10px 0'}}>
+                            <li key={team.id} style={{padding: '10px 0 10px 0', fontSize: '2em'}}>
                                 <Link to={`/teams/${team.id}`}>
                                     {team.name}
                                 </Link>
