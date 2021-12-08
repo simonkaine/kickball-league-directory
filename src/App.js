@@ -5,6 +5,7 @@ import { Home  } from './Views/Home/Home';
 import { Footer } from './Views/Footer/Footer';
 import TeamList from './Views/Teams/TeamList';
 import TeamDetails from './Views/Teams/TeamDetails';
+import PlayersList from './Views/Players/PlayersList';
 
 function App() {
   return (
@@ -16,13 +17,15 @@ function App() {
       </header>
 
       <Switch>
-      
+
           <Route exact path='/'>
             <Home />  
           </Route>
 
           <Route path='/teams/:teamId' component={TeamDetails} />
           <Route path='/teams' component={TeamList} />
+
+          <Route path='/players' component={PlayersList} />
 
       </Switch>
 
