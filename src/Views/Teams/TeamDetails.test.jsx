@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import TeamDetails from "./TeamDetails";
 
-it('Should test for detailed view of teams list', async () => {
+it('Should test for detailed view of team', async () => {
     const {container} = render(
         <MemoryRouter>
             <TeamDetails match={{ params: {teamId: '1'} }}/>

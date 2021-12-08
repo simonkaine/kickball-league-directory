@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should test for detailed view of teams list 1`] = `
+exports[`Should test for detailed view of team 1`] = `
 <div>
   <div
     class="TeamDetails"
