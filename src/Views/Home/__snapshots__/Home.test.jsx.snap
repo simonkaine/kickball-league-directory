@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test for home view render 1`] = `
+<div>
+  <section
+    class="HomePage"
+  >
+    <div
+      style="height: 100vh; margin: 100px 0px 0px 0px; background-color: rgb(255, 255, 240);"
+    >
+      <h1
+        style="font-size: 3em; margin: -50px 0px 50px 0px;"
+      >
+        Welcome to the Kickball League Directory!
+      </h1>
+      <img
+        alt="Timbers Stadium"
+        src="kickball.jpg"
+      />
+    </div>
+  </section>
+</div>
+`;
