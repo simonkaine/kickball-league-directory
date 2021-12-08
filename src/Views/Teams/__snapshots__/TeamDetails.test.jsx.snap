@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should test for detailed view of teams list 1`] = `
+<div>
+  <div
+    class="TeamDetails"
+    style="border: 1px solid black; padding: 100px 0px 0px 0px;"
+  >
+    <h1
+      style="font-family: Century Gothic; font-size: 4em;"
+    >
+      Bridge City Sneakers
+    </h1>
+    <h3
+      style="font-family: Century Gothic; font-size: 2em;"
+    >
+      From: 
+      Portland
+      , 
+      OR
+    </h3>
+    <ul
+      aria-label="team players"
+      style="list-style-type: none; height: 100vh;"
+    >
+      <li
+        style="text-decoration: underline; padding: 10px;"
+      >
+        Position: 
+        Pitcher
+         
+        --
+         
+        Name: 
+        Ben E. Jetts
+      </li>
+      <li
+        style="text-decoration: underline; padding: 10px;"
+      >
+        Position: 
+        Catcher
+         
+        --
+         
+        Name: 
+        Hans Olo
+      </li>
+      <li
+        style="text-decoration: underline; padding: 10px;"
+      >
+        Position: 
+        Outfield
+         
+        --
+         
+        Name: 
+        Ron Long
+      </li>
+      <li
+        style="text-decoration: underline; padding: 10px;"
+      >
+        Position: 
+        Shortstop
+         
+        --
+         
+        Name: 
+        Shorty Biggum
+      </li>
+    </ul>
+  </div>
+</div>
+`;
