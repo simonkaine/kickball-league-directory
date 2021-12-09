@@ -10,7 +10,7 @@ it('Should test for detailed view of player', async () => {
     );
     
     screen.getByText('...Loading player');
-    const thePlayerName = await screen.findByText(/Ben E. Jetts/i);
+    const thePlayerName = await screen.findByText(/Simon Kaine/i);
     expect(thePlayerName).toBeInTheDocument()
     expect(container).toMatchSnapshot();
 });
