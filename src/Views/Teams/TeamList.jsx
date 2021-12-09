@@ -8,11 +8,12 @@ export default function TeamList() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        
         getTeams().then((response) => setTeams(response))
-
-        setTimeout(() => {
-            setLoading(false)
-        }, 600)
+        .finally(()=> setLoading(false)) 
+        // setTimeout(() => {
+           
+        // }, 600)
     }, []);
 
     if (loading) return <h1 style={{height: '100vh', fontSize: '3em', marginTop: '350px'}}>...Loading teams</h1>;
@@ -23,7 +24,7 @@ export default function TeamList() {
             <div className='teamsList'>
             <h1 style={{fontFamily: 'Century Gothic', fontSize: '4em', margin: '100px 0 0 0'}}>~ Teams ~</h1>
 
-                <ul aria-label='teams' style={{listStyleType: 'none', height: '100vh', margin: '50px 0 0 0'}}>
+                <ul aria-label='teams' name='teams' style={{listStyleType: 'none', height: '100vh', margin: '50px 0 0 0'}}>
                     {teams.map((team) => {
                         return (
                             <li key={team.id} style={{padding: '10px 0 10px 0', fontSize: '2em'}}>

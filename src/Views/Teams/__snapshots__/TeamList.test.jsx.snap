@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should test for a detailed Team list view 1`] = `
+<div>
+  <section
+    class="Teams"
+  >
+    <div
+      class="teamsList"
+    >
+      <h1
+        style="font-family: Century Gothic; font-size: 4em; margin: 100px 0px 0px 0px;"
+      >
+        ~ Teams ~
+      </h1>
+      <ul
+        aria-label="teams"
+        name="teams"
+        style="list-style-type: none; height: 100vh; margin: 50px 0px 0px 0px;"
+      >
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 2em;"
+        >
+          <a
+            href="/teams/1"
+          >
+            Bridge City Sneakers
+          </a>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 2em;"
+        >
+          <a
+            href="/teams/2"
+          >
+            Rose City Bing Bongs
+          </a>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 2em;"
+        >
+          <a
+            href="/teams/3"
+          >
+            The Dang Turkeys
+          </a>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 2em;"
+        >
+          <a
+            href="/teams/4"
+          >
+            The Seattle Supabases
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+`;
