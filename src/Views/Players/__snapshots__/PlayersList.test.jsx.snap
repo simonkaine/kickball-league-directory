@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should test for a detailed players list view 1`] = `
+<div>
+  <section
+    class="Players"
+  >
+    <div
+      class="PlayersList"
+    >
+      <h1
+        style="font-family: Century Gothic; font-size: 4em; margin: 100px 0px 0px 0px;"
+      >
+        ~ Players ~
+      </h1>
+      <ul
+        aria-label="players"
+        style="list-style-type: none; height: 100vh; margin: 50px 0px 0px 0px;"
+      >
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/5"
+          >
+            Bobby Brewster
+          </a>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/3"
+          >
+            David Bowie
+          </a>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/6"
+          >
+            Don Lego-hands Jr
+          </a>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/10"
+          >
+            Dwayne 'the Rock' Johnson
+          </a>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/2"
+          >
+            Fred Durst
+          </a>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/7"
+          >
+            Linda Ronstadt
+          </a>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/8"
+          >
+            Mr Mario Manchego 
+          </a>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/4"
+          >
+            Patrick Stewart
+          </a>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/1"
+          >
+            Simon Kaine
+          </a>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/9"
+          >
+            Thomas Shelby
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+`;
