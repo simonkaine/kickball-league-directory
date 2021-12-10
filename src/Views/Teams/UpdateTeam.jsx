@@ -1,25 +1,25 @@
-// this file i want to house my form for user to create a team 
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import TeamForm from '../../Components/Team/TeamForm';
-import { createTeam } from '../../Services/teams';  
+import { updateTeamById } from '../../Services/teams';  
 
-export default function AddTeam() {
+export default function UpdateTeam({ match }) {
+    const { id } = match.params;
     const [name, setName] = useState('');
     const [city, setCity] = useState('');
     const [state, setState] = useState('');
     const history = useHistory();
-
+    
     const submitHandler = async (e) => {
         e.preventDefault();
-        const response = await createTeam({name, city, state}) 
+        const response = await updateTeamById(id, {name, city, state}) 
         history.push(`/teams/${response[0].id}`);
     };
 
     return (
         <fieldset>
             <legend>
-                Let's edit this team!
+                let's Edit this team!
             </legend>
             <TeamForm 
                 name={name} city={city} state={state} 

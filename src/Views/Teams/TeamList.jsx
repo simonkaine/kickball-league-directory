@@ -37,17 +37,10 @@ export default function TeamList() {
                                     {team.name}
                                 </Link>
 
-                                {/* <Link to='/teams/create'>
-                                    <button>Add Team</button>
-                                </Link>
-
-                                <Link>
+                                <Link to={`teams/${team.id}/update`}>
                                     <button>Edit Team</button>
                                 </Link>
 
-                                <Link>
-                                    <button>Delete Team</button>
-                                </Link> */}
                             </li>
                         );
                     })}
