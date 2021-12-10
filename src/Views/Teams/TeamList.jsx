@@ -37,7 +37,7 @@ export default function TeamList() {
                                     {team.name}
                                 </Link>
 
-                                <Link to={`/teams/create`}>
+                                {/* <Link to='/teams/create'>
                                     <button>Add Team</button>
                                 </Link>
 
@@ -47,7 +47,7 @@ export default function TeamList() {
 
                                 <Link>
                                     <button>Delete Team</button>
-                                </Link>
+                                </Link> */}
                             </li>
                         );
                     })}

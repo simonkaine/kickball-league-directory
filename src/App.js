@@ -10,6 +10,7 @@ import PlayerDetails from './Views/Players/PlayersDetails';
 import AddTeam from './Views/Teams/AddTeam';
 
 function App() {
+  // ORDER MATTERS IN ROUTES! note to self
   return (
     <div className="App">
     <Router>
@@ -25,12 +26,12 @@ function App() {
           </Route>
 
           <Route exact path='/teams' component={TeamList} />
-          <Route path='/teams/:teamId' component={TeamDetails} />
-
-          <Route exact path='/players' component={PlayersList} />
-          <Route path='/players/:playerId' component={PlayerDetails} />
-
           <Route exact path='/teams/create' component={AddTeam} />
+          <Route exact path='/teams/:teamId' component={TeamDetails} />
+          
+          <Route exact path='/players' component={PlayersList} />
+          <Route exact path='/players/:playerId' component={PlayerDetails} />
+
 
       </Switch>
 
