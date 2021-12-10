@@ -8,10 +8,10 @@ export default function PlayersList() {
 
     useEffect(() => {
         getPlayers().then((response) => setPlayers(response))
-
+        .finally(() => 
         setTimeout(() => {
             setLoading(false)
-        }, 600)
+        }, 600))
     }, []);
 
     if(loading) return <h1 style={{height: '100vh', fontSize: '3em', marginTop: '350px'}}>...Loading players</h1>;
@@ -28,6 +28,7 @@ export default function PlayersList() {
                                 <Link to={`/players/${player.id}`}>
                                     {player.name}
                                 </Link>
+
                             </li>
                         );
                     })}
