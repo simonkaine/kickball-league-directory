@@ -31,7 +31,7 @@ export default function TeamForm({ name, setName, submitHandler, state, setState
                     value={state}
                     onChange={(e) => setState(e.target.value)}
                 ></input>
-                <button>Button</button>
+                <button>Submit</button>
             </form>
         </>
     )

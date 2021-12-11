@@ -19,7 +19,7 @@ export default function AddTeam() {
     return (
         <fieldset>
             <legend>
-                Let's edit this team!
+                Team Add/Edit
             </legend>
             <TeamForm 
                 name={name} city={city} state={state} 

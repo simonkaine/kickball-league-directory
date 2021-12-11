@@ -15,8 +15,13 @@ export default function PlayersList() {
     }, []);
 
     if(loading) return <h1 style={{height: '100vh', fontSize: '3em', marginTop: '350px'}}>...Loading players</h1>;
-
+    
     return (
+        <>
+        <div>
+            <Link to='/players/create'>Add a new player</Link>
+        </div>
+
         <section className='Players'>
             <div className='PlayersList'>
             <h1 style={{fontFamily: 'Century Gothic', fontSize: '4em', margin: '100px 0 0 0'}}>~ Players ~</h1>
@@ -35,5 +40,6 @@ export default function PlayersList() {
                 </ul>
             </div>
         </section>
+        </>
     )
 }
