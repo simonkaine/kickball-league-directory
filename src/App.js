@@ -10,6 +10,7 @@ import PlayerDetails from './Views/Players/PlayersDetails';
 import AddTeam from './Views/Teams/AddTeam';
 import UpdateTeam from './Views/Teams/UpdateTeam';
 import AddPlayer from './Views/Players/AddPlayer'
+import UpdatePlayer from './Views/Players/UpdatePlayer';
 
 function App() {
   // ORDER MATTERS IN ROUTES! note to self
@@ -35,6 +36,7 @@ function App() {
           <Route exact path='/players' component={PlayersList} />
           <Route exact path='/players/create' component={AddPlayer} />
           <Route exact path='/players/:playerId' component={PlayerDetails} />
+          <Route exact path='/players/:id/update' component={UpdatePlayer} />
 
       </Switch>
 

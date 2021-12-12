@@ -34,6 +34,10 @@ export default function PlayersList() {
                                     {player.name}
                                 </Link>
 
+                                <Link to={`players/${player.id}/update`}>
+                                    <button>Edit Player</button>
+                                </Link>
+
                             </li>
                         );
                     })}

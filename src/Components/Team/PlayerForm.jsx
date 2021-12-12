@@ -31,7 +31,7 @@ export default function PlayerForm({
                     onChange={(e) => setPosition(e.target.value)}
                 ></input>
 
-                <label htmlFor='player team'>Team: </label>
+                {/* <label htmlFor='player team'>Team: </label>
                 <select onChange={(e) => setTeamId(e.target.value)}>
                     <option key='all' value='all'>Please choose a team</option>
 
@@ -41,7 +41,7 @@ export default function PlayerForm({
                         value={team.id}>
                         {team.name}</option>
                     ))}
-                </select>
+                </select> */}
 
                 <button>Submit</button>
             </form>
