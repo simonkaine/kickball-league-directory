@@ -18,7 +18,7 @@ export default function CreatePlayer() {
         async function getAllTeams() {
             const fetchedTeams = await getTeams();
             setTeams(fetchedTeams);
-            console.log(fetchedTeams)
+            
         }
         getAllTeams();
     },[])

@@ -4,9 +4,9 @@ export default function PlayerForm({
     submitHandler, 
     position, 
     setPosition,
-    teamId, 
     setTeamId, 
-    teams
+    teams,
+    teamId
     }) {
     return (
         <>
@@ -31,17 +31,20 @@ export default function PlayerForm({
                     onChange={(e) => setPosition(e.target.value)}
                 ></input>
 
-                {/* <label htmlFor='player team'>Team: </label>
-                <select onChange={(e) => setTeamId(e.target.value)}>
+                <label htmlFor='player team'>Team: </label>
+
+                <select value={teamId} onChange={(e) => setTeamId(e.target.value)}>
+                
                     <option key='all' value='all'>Please choose a team</option>
 
                     {teams.map((team) => (
                         <option 
-                        key={team.id} 
-                        value={team.id}>
-                        {team.name}</option>
+                            key={team.id} 
+                            value={team.id}>
+                            {team.name}
+                        </option>
                     ))}
-                </select> */}
+                </select>
 
                 <button>Submit</button>
             </form>
