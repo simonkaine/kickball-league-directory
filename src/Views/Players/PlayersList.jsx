@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { getPlayers } from '../../Services/players.js';
+import { getPlayers, deletePlayerById } from '../../Services/players.js';
 
 export default function PlayersList() {
     const [players, setPlayers] = useState([]);
@@ -13,6 +13,19 @@ export default function PlayersList() {
             setLoading(false)
         }, 600))
     }, []);
+
+    const deleteHandler = async ({id, name}) => {
+        const userWantsTodelete = window.confirm(`Just double checking, are you sure you want to delete ${name}?`);
+        
+        if(userWantsTodelete) {
+            await deletePlayerById(id);
+            setLoading(true);
+            const newPlayerList = await getPlayers();
+            setPlayers(newPlayerList);
+            setLoading(false);
+        }
+
+    };
 
     if(loading) return <h1 style={{height: '100vh', fontSize: '3em', marginTop: '350px'}}>...Loading players</h1>;
     
@@ -37,6 +50,11 @@ export default function PlayersList() {
                                 <Link to={`players/${player.id}/update`}>
                                     <button>Edit Player</button>
                                 </Link>
+
+                                <button type='button' aria-label={`delete player ${player.name}`}
+                                    onClick={() => deleteHandler({id: player.id, name: player.name})}>
+                                    Delete This player
+                                </button>
 
                             </li>
                         );
