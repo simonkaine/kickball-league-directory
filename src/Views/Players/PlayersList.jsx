@@ -7,22 +7,22 @@ export default function PlayersList() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        getPlayers().then((response) => setPlayers(response))
-        .finally(() => 
-        setTimeout(() => {
-            setLoading(false)
-        }, 600))
+        loadPlayers()
     }, []);
+
+    const loadPlayers = async () => {
+        setLoading(true);
+        const newPlayerList = await getPlayers();
+        setPlayers(newPlayerList);
+        setLoading(false);
+    }
 
     const deleteHandler = async ({id, name}) => {
         const userWantsTodelete = window.confirm(`Just double checking, are you sure you want to delete ${name}?`);
         
         if(userWantsTodelete) {
             await deletePlayerById(id);
-            setLoading(true);
-            const newPlayerList = await getPlayers();
-            setPlayers(newPlayerList);
-            setLoading(false);
+            await loadPlayers()
         }
 
     };

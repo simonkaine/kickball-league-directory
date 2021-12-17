@@ -6,26 +6,27 @@ import { getTeams, deleteTeamById } from '../../Services/teams.js';
 export default function TeamList() {
     const [teams, setTeams] = useState([]);
     const [loading, setLoading] = useState(true);
+ 
 
     useEffect(() => {
-        getTeams().then((response) => setTeams(response))
-        .finally(()=> 
-        setTimeout(() => {
-            setLoading(false)
-        }, 600)) 
+        loadTeams()
     }, []);
 
+    const loadTeams = async () => {
+        setLoading(true);
+        const newTeamList = await getTeams();
+        setTeams(newTeamList);
+        setLoading(false);
+    }
+
     const deleteHandler = async ({id, name}) => {
-        const userWantsTodelete = window.confirm(`Just double checking, are you sure you want to delete ${name}?`);
+        const userWantsTodelete = window.confirm(`Just double checking, are you sure you want to delete team and PLAYERS in team ${name}?`);
         
         if(userWantsTodelete) {
             await deleteTeamById(id);
-            setLoading(true);
-            const newTeamList = await getTeams();
-            setTeams(newTeamList);
-            setLoading(false);
+            console.log('load teams::::::: ',loadTeams())
+            await loadTeams();
         }
-
     };
 
     if (loading) return <h1 style={{height: '100vh', fontSize: '3em', marginTop: '350px'}}>...Loading teams</h1>;
