@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { getPlayers, deletePlayerById, getPlayerById } from '../../Services/players.js';
+import { getPlayers, deletePlayerById } from '../../Services/players.js';
 
 export default function PlayersList() {
     const [players, setPlayers] = useState([]);

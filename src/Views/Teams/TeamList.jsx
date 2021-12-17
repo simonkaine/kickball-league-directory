@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getTeams, deleteTeamById } from '../../Services/teams.js';
 // import ball from '../../assets/ball.png';
-import { getPlayerById } from '../../Services/players'
+
 
 export default function TeamList() {
     const [teams, setTeams] = useState([]);
