@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should test for detailed view of player 1`] = `
+<div>
+  <div
+    class="PlayerDetails"
+    style="border: 1px solid black; padding: 100px 0px 0px 0px; height: 100vh;"
+  >
+    <h1
+      style="font-family: Century Gothic; font-size: 4em;"
+    >
+      Simon Kaine
+    </h1>
+    <p
+      style="font-size: 2em;"
+    >
+      pitcher
+       for the 
+      Bridge City Sneakers
+    </p>
+  </div>
+</div>
+`;

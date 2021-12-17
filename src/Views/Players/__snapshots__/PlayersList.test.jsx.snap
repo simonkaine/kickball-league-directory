@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should test for a detailed players list view 1`] = `
+<div>
+  <div>
+    <a
+      href="/players/create"
+    >
+      Add a new player
+    </a>
+  </div>
+  <section
+    class="Players"
+  >
+    <div
+      class="PlayersList"
+    >
+      <h1
+        style="font-family: Century Gothic; font-size: 4em; margin: 100px 0px 0px 0px;"
+      >
+        ~ Players ~
+      </h1>
+      <ul
+        aria-label="players"
+        style="list-style-type: none; height: 100vh; margin: 50px 0px 0px 0px;"
+      >
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/3"
+          >
+            David Bowie
+          </a>
+          <a
+            href="/players/3/update"
+          >
+            <button>
+              Edit Player
+            </button>
+          </a>
+          <button
+            aria-label="delete player David Bowie"
+            type="button"
+          >
+            Delete This player
+          </button>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/6"
+          >
+            Don Lego-hands Jr
+          </a>
+          <a
+            href="/players/6/update"
+          >
+            <button>
+              Edit Player
+            </button>
+          </a>
+          <button
+            aria-label="delete player Don Lego-hands Jr"
+            type="button"
+          >
+            Delete This player
+          </button>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/10"
+          >
+            Dwayne 'the Rock' Johnson
+          </a>
+          <a
+            href="/players/10/update"
+          >
+            <button>
+              Edit Player
+            </button>
+          </a>
+          <button
+            aria-label="delete player Dwayne 'the Rock' Johnson"
+            type="button"
+          >
+            Delete This player
+          </button>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/2"
+          >
+            Fred Durst
+          </a>
+          <a
+            href="/players/2/update"
+          >
+            <button>
+              Edit Player
+            </button>
+          </a>
+          <button
+            aria-label="delete player Fred Durst"
+            type="button"
+          >
+            Delete This player
+          </button>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/7"
+          >
+            Linda Ronstadt
+          </a>
+          <a
+            href="/players/7/update"
+          >
+            <button>
+              Edit Player
+            </button>
+          </a>
+          <button
+            aria-label="delete player Linda Ronstadt"
+            type="button"
+          >
+            Delete This player
+          </button>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/4"
+          >
+            Patrick Stewart
+          </a>
+          <a
+            href="/players/4/update"
+          >
+            <button>
+              Edit Player
+            </button>
+          </a>
+          <button
+            aria-label="delete player Patrick Stewart"
+            type="button"
+          >
+            Delete This player
+          </button>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/1"
+          >
+            Simon Kaine
+          </a>
+          <a
+            href="/players/1/update"
+          >
+            <button>
+              Edit Player
+            </button>
+          </a>
+          <button
+            aria-label="delete player Simon Kaine"
+            type="button"
+          >
+            Delete This player
+          </button>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 1.5em;"
+        >
+          <a
+            href="/players/9"
+          >
+            Thomas Shelby
+          </a>
+          <a
+            href="/players/9/update"
+          >
+            <button>
+              Edit Player
+            </button>
+          </a>
+          <button
+            aria-label="delete player Thomas Shelby"
+            type="button"
+          >
+            Delete This player
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+`;

@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should test for a detailed Team list view 1`] = `
+<div>
+  <div>
+    <a
+      href="/teams/create"
+    >
+      Add a new team
+    </a>
+  </div>
+  <section
+    class="Teams"
+  >
+    <div
+      class="teamsList"
+    >
+      <h1
+        style="font-family: Century Gothic; font-size: 4em; margin: 100px 0px 0px 0px;"
+      >
+        ~ Teams ~
+      </h1>
+      <ul
+        aria-label="teams"
+        name="teams"
+        style="list-style-type: none; height: 100vh; margin: 50px 0px 0px 0px;"
+      >
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 2em;"
+        >
+          <a
+            href="/teams/1"
+          >
+            Bridge City Sneakers
+          </a>
+          <a
+            href="/teams/1/update"
+          >
+            <button>
+              Edit Team
+            </button>
+          </a>
+          <button
+            aria-label="delete team Bridge City Sneakers"
+            type="button"
+          >
+            Delete This Team
+          </button>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 2em;"
+        >
+          <a
+            href="/teams/2"
+          >
+            Rose City Bing Bongs
+          </a>
+          <a
+            href="/teams/2/update"
+          >
+            <button>
+              Edit Team
+            </button>
+          </a>
+          <button
+            aria-label="delete team Rose City Bing Bongs"
+            type="button"
+          >
+            Delete This Team
+          </button>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 2em;"
+        >
+          <a
+            href="/teams/3"
+          >
+            The Dang Turkeys
+          </a>
+          <a
+            href="/teams/3/update"
+          >
+            <button>
+              Edit Team
+            </button>
+          </a>
+          <button
+            aria-label="delete team The Dang Turkeys"
+            type="button"
+          >
+            Delete This Team
+          </button>
+        </li>
+        <li
+          style="padding: 10px 0px 10px 0px; font-size: 2em;"
+        >
+          <a
+            href="/teams/4"
+          >
+            The Seattle Supabases
+          </a>
+          <a
+            href="/teams/4/update"
+          >
+            <button>
+              Edit Team
+            </button>
+          </a>
+          <button
+            aria-label="delete team The Seattle Supabases"
+            type="button"
+          >
+            Delete This Team
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+`;

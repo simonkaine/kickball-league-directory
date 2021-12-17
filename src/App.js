@@ -1,23 +1,50 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
+import { Header } from './Views/Header/Header';
+import { Home  } from './Views/Home/Home';
+import { Footer } from './Views/Footer/Footer';
+import TeamList from './Views/Teams/TeamList';
+import TeamDetails from './Views/Teams/TeamDetails';
+import PlayersList from './Views/Players/PlayersList';
+import PlayerDetails from './Views/Players/PlayersDetails';
+import AddTeam from './Views/Teams/AddTeam';
+import UpdateTeam from './Views/Teams/UpdateTeam';
+import AddPlayer from './Views/Players/AddPlayer'
+import UpdatePlayer from './Views/Players/UpdatePlayer';
 
 function App() {
+  // ORDER MATTERS IN ROUTES! note to self
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Router>
+
+      <header>
+        <Header />  
       </header>
+
+      <Switch>
+
+          <Route exact path='/'>
+            <Home />  
+          </Route>
+
+          <Route exact path='/teams' component={TeamList} />
+          <Route exact path='/teams/create' component={AddTeam} />
+          <Route exact path='/teams/:teamId' component={TeamDetails} />
+          <Route exact path='/teams/:id/update' component={UpdateTeam} />
+
+          <Route exact path='/players' component={PlayersList} />
+          <Route exact path='/players/create' component={AddPlayer} />
+          <Route exact path='/players/:playerId' component={PlayerDetails} />
+          <Route exact path='/players/:id/update' component={UpdatePlayer} />
+
+      </Switch>
+
+      <footer>
+        <Footer />
+      </footer>
+
+    </Router>
     </div>
   );
 }
