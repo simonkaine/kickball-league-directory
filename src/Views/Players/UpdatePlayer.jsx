@@ -37,7 +37,7 @@ export default function UpdatePlayer({ match }) {
         e.preventDefault();
         const response = await updatePlayerById(id, {name, position}) 
         console.log('RESPONSE ',response)
-        history.push(`/teams/${response[0].id}`);
+        history.push(`/players/${response[0].id}`);
     };
 
     return teams ? 
