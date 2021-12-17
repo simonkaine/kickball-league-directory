@@ -32,5 +32,5 @@ export async function createPlayer({ name, position, teamId }) {
 
 export async function deletePlayerById(id) {
   const request = await client.from('players').delete().match({ id });
-  return parseData(request);
+  return parseData(request); 
 };
