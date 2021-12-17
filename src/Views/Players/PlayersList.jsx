@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { getPlayers, deletePlayerById } from '../../Services/players.js';
+import { getPlayers, deletePlayerById, getPlayerById } from '../../Services/players.js';
 
 export default function PlayersList() {
     const [players, setPlayers] = useState([]);
@@ -18,12 +18,13 @@ export default function PlayersList() {
     }
 
     const deleteHandler = async ({id, name}) => {
+        
         const userWantsTodelete = window.confirm(`Just double checking, are you sure you want to delete ${name}?`);
         
         if(userWantsTodelete) {
             await deletePlayerById(id);
             await loadPlayers()
-        }
+        } 
 
     };
 

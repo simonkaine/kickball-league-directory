@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getTeams, deleteTeamById } from '../../Services/teams.js';
 // import ball from '../../assets/ball.png';
+import { getPlayerById } from '../../Services/players'
 
 export default function TeamList() {
     const [teams, setTeams] = useState([]);
     const [loading, setLoading] = useState(true);
  
-
     useEffect(() => {
         loadTeams()
     }, []);
@@ -18,13 +18,19 @@ export default function TeamList() {
         setTeams(newTeamList);
         setLoading(false);
     }
+    // get players and filter out players with team id matching
+    // 
+    // const hasId = async ({id}) => {
+    //     await getPlayerById(id);
+    // }
 
     const deleteHandler = async ({id, name}) => {
-        const userWantsTodelete = window.confirm(`Just double checking, are you sure you want to delete team and PLAYERS in team ${name}?`);
+        console.log('id, name', id , name);
+        const userWantsToDelete = window.confirm(`Just double checking, this will delete players and team ${name}`);
         
-        if(userWantsTodelete) {
+        if(userWantsToDelete) {
+            // await hasId()
             await deleteTeamById(id);
-            console.log('load teams::::::: ',loadTeams())
             await loadTeams();
         }
     };

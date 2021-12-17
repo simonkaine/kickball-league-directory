@@ -30,6 +30,7 @@ export async function createTeam({ name, city, state }) {
 };
 
 export async function deleteTeamById(id) {
+  await client.from('players').delete().match({ team_id: id });
   const request = await client.from('teams').delete().match({ id });
   return parseData(request);
 };
