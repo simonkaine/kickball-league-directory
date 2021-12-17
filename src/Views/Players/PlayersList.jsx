@@ -8,7 +8,7 @@ export default function PlayersList() {
 
     useEffect(() => {
         loadPlayers()
-    }, []);
+    }, []);  
 
     const loadPlayers = async () => {
         setLoading(true);

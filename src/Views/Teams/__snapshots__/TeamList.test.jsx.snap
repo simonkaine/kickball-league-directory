@@ -2,6 +2,13 @@
 
 exports[`Should test for a detailed Team list view 1`] = `
 <div>
+  <div>
+    <a
+      href="/teams/create"
+    >
+      Add a new team
+    </a>
+  </div>
   <section
     class="Teams"
   >
@@ -26,6 +33,19 @@ exports[`Should test for a detailed Team list view 1`] = `
           >
             Bridge City Sneakers
           </a>
+          <a
+            href="/teams/1/update"
+          >
+            <button>
+              Edit Team
+            </button>
+          </a>
+          <button
+            aria-label="delete team Bridge City Sneakers"
+            type="button"
+          >
+            Delete This Team
+          </button>
         </li>
         <li
           style="padding: 10px 0px 10px 0px; font-size: 2em;"
@@ -35,6 +55,19 @@ exports[`Should test for a detailed Team list view 1`] = `
           >
             Rose City Bing Bongs
           </a>
+          <a
+            href="/teams/2/update"
+          >
+            <button>
+              Edit Team
+            </button>
+          </a>
+          <button
+            aria-label="delete team Rose City Bing Bongs"
+            type="button"
+          >
+            Delete This Team
+          </button>
         </li>
         <li
           style="padding: 10px 0px 10px 0px; font-size: 2em;"
@@ -44,6 +77,19 @@ exports[`Should test for a detailed Team list view 1`] = `
           >
             The Dang Turkeys
           </a>
+          <a
+            href="/teams/3/update"
+          >
+            <button>
+              Edit Team
+            </button>
+          </a>
+          <button
+            aria-label="delete team The Dang Turkeys"
+            type="button"
+          >
+            Delete This Team
+          </button>
         </li>
         <li
           style="padding: 10px 0px 10px 0px; font-size: 2em;"
@@ -53,6 +99,19 @@ exports[`Should test for a detailed Team list view 1`] = `
           >
             The Seattle Supabases
           </a>
+          <a
+            href="/teams/4/update"
+          >
+            <button>
+              Edit Team
+            </button>
+          </a>
+          <button
+            aria-label="delete team The Seattle Supabases"
+            type="button"
+          >
+            Delete This Team
+          </button>
         </li>
       </ul>
     </div>

@@ -27,45 +27,23 @@ exports[`Should test for detailed view of team 1`] = `
         style="text-decoration: underline; padding: 10px;"
       >
         Position: 
-        Pitcher
+        Peaky Blinder
          
         --
          
         Name: 
-        Ben E. Jetts
+        Thomas Shelby
       </li>
       <li
         style="text-decoration: underline; padding: 10px;"
       >
         Position: 
-        Catcher
+        pitcher
          
         --
          
         Name: 
-        Hans Olo
-      </li>
-      <li
-        style="text-decoration: underline; padding: 10px;"
-      >
-        Position: 
-        Outfield
-         
-        --
-         
-        Name: 
-        Ron Long
-      </li>
-      <li
-        style="text-decoration: underline; padding: 10px;"
-      >
-        Position: 
-        Shortstop
-         
-        --
-         
-        Name: 
-        Shorty Biggum
+        Simon Kaine
       </li>
     </ul>
   </div>
